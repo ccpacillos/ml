@@ -136,9 +136,9 @@ def animate(i):
 
     if (i % 2 > 0):
         iteration_number += 1
-        ax.scatter([cx_1], [cy_1], c="lightcoral")
-        ax.scatter([cx_2], [cy_2], c="skyblue")
-        ax.scatter([cx_3], [cy_3], c="springgreen")
+        ax.scatter([cx_1], [cy_1], c="red")
+        ax.scatter([cx_2], [cy_2], c="blue")
+        ax.scatter([cx_3], [cy_3], c="green")
 
         # get new centroids
         cx_1, cy_1 = get_centroid(c1_points)
@@ -148,7 +148,7 @@ def animate(i):
         initialized = False
 
 
-ani = FuncAnimation(fig=fig, func=animate, frames=range(100),
+ani = FuncAnimation(fig=fig, func=animate, frames=range(21),
                     interval=1000, repeat=False)
 
 
