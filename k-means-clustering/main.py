@@ -148,8 +148,8 @@ def animate(i):
         initialized = False
 
 
-ani = FuncAnimation(fig=fig, func=animate, frames=range(21),
-                    interval=1000, repeat=False)
+ani = FuncAnimation(fig=fig, func=animate, frames=range(1000),
+                    interval=800, repeat=False)
 
 
 # f = ax.scatter(x_random, y_random, c="black")
