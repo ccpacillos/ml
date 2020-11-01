@@ -9,5 +9,7 @@ def csv_to_dict_list(file):
   return dict_list
 
 
-def examples_to_vectors(modifier, examples):
-  return list(map(lambda x: modifier(x), examples))
+def dict_list_to_csv(file, data, fieldnames):
+  writer = csv.DictWriter(open(file, 'w'), fieldnames)
+  writer.writeheader()
+  writer.writerows(data)
